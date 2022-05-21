@@ -3,22 +3,22 @@ import java.util.*;
 
 public class Pro10 {
 	public static void main(String[] args) {
-		// »ç¿ëÀÚ·ÎºÎÅÍ °ªÀ» ÀÔ·Â¹Ş´Â ¸í·É¾î
+		// ì‚¬ìš©ìë¡œë¶€í„° ê°’ì„ ì…ë ¥ë°›ëŠ” ëª…ë ¹ì–´
 		Scanner in = new Scanner(System.in);
 		
-		System.out.println("³ªÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ë‚˜ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		
 		int age = in.nextInt();
-		System.out.println("ÀÔ·ÂÇÑ ³ªÀÌ´Â : " + age);
+		System.out.println("ì…ë ¥í•œ ë‚˜ì´ëŠ” : " + age);
 		
-		//°á°ú°¡ true,false·Î ³ª¿È
+		//ê²°ê³¼ê°€ true,falseë¡œ ë‚˜ì˜´
 		System.out.println(age > 25);
 		System.out.println((age>=10) && (age<=19));
 		System.out.println(age < 10);
 		
-		//for¹®
+		//ifë¬¸
 		if(age>=10 && age<=19) {
-			System.out.println("10´ë");
+			System.out.println("10ëŒ€");
 		}
 		
 	}
