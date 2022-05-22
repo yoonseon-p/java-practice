@@ -3,30 +3,34 @@ import java.util.Scanner;
 public class Pro10 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		System.out.println("## ·Î±×ÀÎ(admin È¤Àº ÀÓÀÇ ¾ÆÀÌµğ) ##");
-		System.out.println("# ·Î±×ÀÎ ¾ÆÀÌµğ : ");
+		System.out.println("## ë¡œê·¸ì¸(admin í˜¹ì€ ì„ì˜ ì•„ì´ë””) ##");
+		System.out.println("# ë¡œê·¸ì¸ ì•„ì´ë”” : ");
 		
 		String user = in.next();
 		
 		if(user.equals("admin")) {
-			System.out.println("°ü¸®ÀÚ ·Î±×ÀÎ!!");
-			
-			System.out.println("## ¸Ş´º¸¦ ¼±ÅÃ ÇÏ¼¼¿ä(1~2) ##");
-			System.out.println("# ¸Ş´º ¼±ÅÃ : ");
-			
-			String sel = in.next();
-			
-			if(sel.equals("1") && user.equals("admin")) {
-				System.out.println("°ü¸®ÀÚ 1¹ø ¼±ÅÃÇÔ!!");
-			}
-			else if(sel.equals("2") && user.equals("admin")) {
-				System.out.println("°ü¸®ÀÚ 2¹ø ¼±ÅÃÇÔ!!");
-			}
-			
+			System.out.println("ê´€ë¦¬ì ë¡œê·¸ì¸!!");
 		}
 		else {
-			System.out.println(user + " ·Î±×ÀÎ!!");
+			System.out.println(user + " ë¡œê·¸ì¸!!");
 		}
 		
+		System.out.println("## ë©”ë‰´ë¥¼ ì„ íƒ í•˜ì„¸ìš”(1~2) ##");
+		System.out.println("# ë©”ë‰´ ì„ íƒ : ");
+			
+		String sel = in.next();
+			
+		if(sel.equals("1") && user.equals("admin")) {
+			System.out.println("ê´€ë¦¬ì 1ë²ˆ ì„ íƒí•¨!!");
+		}
+		else if(sel.equals("2") && user.equals("admin")) {
+			System.out.println("ê´€ë¦¬ì 2ë²ˆ ì„ íƒí•¨!!");
+		}
+		else if(sel.equals("1") && !user.equals("admin")) {
+			System.out.println(user + " 1ë²ˆ ì„ íƒí•¨!!");
+		}	
+		else if(sel.equals("2") && !user.equals("admin")) {
+			System.out.println(user + " 2ë²ˆ ì„ íƒí•¨!!");
+		}
 	}
 }
