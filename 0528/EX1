@@ -1,0 +1,42 @@
+package basic;
+import java.util.*;
+
+public class Ex1 {
+	public static void main(String[] args) {
+		// 0.0 ~ 0.1
+		//0.0*10 ~ 0.1*10 --> 0 ~ 100
+		//Math.random();  // Math라는 클래스의 random() 메소드를 호출
+		System.out.println((int)(Math.random()*100));
+		//0 ~ 100미만
+		System.out.println("--------------------------");
+		
+		//10번
+		for(int i=1; i<=10; i++) { // hard cording
+			System.out.println((int)(Math.random()*100));
+		}
+		System.out.println("--------------------------");
+		
+		//7번
+		for(int i=1; i<=7; i++) {
+			System.out.println((int)(Math.random()*100));
+		}
+		System.out.println("--------------------------");
+		
+		//7번 && 범위 0 ~ 45(45포함)
+		for(int i=1; i<=7; i++) {
+			System.out.println((int)(Math.random()*46));
+		}
+		
+		System.out.println("--------------------------");
+		
+		for(int i=1; i<=5; i++)
+		{
+			for(int j=1; j<=7; j++) {
+				System.out.print((int)(Math.random()*46) + "\t");
+				//System.out.printf("%d ",(int)(Math.random()*46));
+			}
+			System.out.println();
+		}
+		
+	}
+}
