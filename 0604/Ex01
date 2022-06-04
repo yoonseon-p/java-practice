@@ -1,0 +1,49 @@
+package basic;
+import java.util.Scanner;
+/*
+ * 
+ * 배열을 응용한 투표 시스템
+ * 유권자가 10명이라고 가정 (10번 입력받아야 함)
+ * 보완
+ * 입력시 범위 넘어가면 예외 - 무효처리
+ * 동수면 해당하는 후보자 모두 출력
+ * 동률인 후보자끼리 재투표
+ * 
+ */
+public class Ex01 {
+	public static void main(String[] args) {
+		//1. 홍길동 2. 이순신 3. 강감찬 4. 철이 5. 순이
+		Scanner in = new Scanner(System.in);
+		String[] name = {"홍길동","이순신","강감찬","철이","순이"};
+		int namemax = 0;
+		int votemax = 0; // 최다 투표수
+		System.out.println("유권자수를 입력하세요");
+		int n = in.nextInt();
+		int voter =n; // 유권자수
+		
+		int[] score =new int[name.length]; // 투표수 
+		
+		for(int j=0; j<voter; j++) {
+			for(int i=0; i<name.length; i++) {
+				System.out.printf("%d.%s " , i+1, name[i]);
+			}
+			System.out.println("\n후보자를 선택해주세요");
+			
+			int vote = in.nextInt();	
+			score[vote]++;
+		}
+		// 투표가 끝 
+		// 투표용지를 검색해서 가장 많은 득표를 얻은 사람을 당선인으로 출력 
+		
+		for(int i=0; i<score.length; i++) {
+			if(score[i]>votemax) {
+				votemax=score[i];
+				namemax=i;
+			}
+			System.out.printf("%s : %d표   ", name[i], score[i]);
+		}
+		// 결과출력
+		System.out.printf("\n당선된 사람은 %d표로 %s입니다", votemax , name[namemax]);
+		
+	}
+}
