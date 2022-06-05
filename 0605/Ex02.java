@@ -1,0 +1,26 @@
+package basic;
+
+import java.util.Scanner;
+
+public class Ex02 {
+//	public static void hello (String name) {
+//		System.out.printf("æ»≥Á«œººø‰ %s¥‘ π›∞©Ω¿¥œ¥Ÿ.\n", name);
+//	}
+	
+	public static String hello (String name) {
+		String str = String.format("æ»≥Á«œººø‰ %s¥‘ π›∞©Ω¿¥œ¥Ÿ.\n", name);
+		return str;
+	}
+	
+	
+	public static void main(String[] args) {
+		String name = "π⁄¿±º±";
+		String result = hello(name);
+		System.out.println(result);
+		
+//		Scanner in = new Scanner(System.in);
+//		System.out.println("¿Ã∏ß¿ª ¿‘∑¬«œººø‰");
+//		String name = in.next();
+//		hello(name);
+	}
+}
