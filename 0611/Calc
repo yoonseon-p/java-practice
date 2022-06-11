@@ -1,0 +1,14 @@
+
+import java.util.Scanner;
+
+// 사용자 정의 데이터 타입
+
+public class Calc {
+	int res; // 변수
+	Scanner in;
+	int add(int num) { // method
+		res += num;
+		return res;
+	}
+	
+}
